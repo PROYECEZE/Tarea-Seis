@@ -39,6 +39,10 @@ module.exports = {
       },
       boxShadow: {
         '3xl': '0px 4px 4px 0px #00000040',
+      },
+      letterSpacing: {
+        sevenLetter: '0.07em',
+        eightLetter:'0.08em',
       }
     },
   },

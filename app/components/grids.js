@@ -11,7 +11,7 @@ export default function TravelCard({ imageUrl, priceColor, fill }) {
           width={400}
         />
         <div
-          className={`absolute left-4 top-4 rounded-full px-3 py-1 text-xs text-white font-roboto font-black ${priceColor}`} aria-label="blog price $49/MO"
+          className={`absolute left-4 top-4 rounded-full px-3 py-1 text-xs text-white font-roboto font-black tracking-eightLetter ${priceColor}`} aria-label="blog price $49/MO"
         >
           $49/MO
         </div>
@@ -32,7 +32,7 @@ export default function TravelCard({ imageUrl, priceColor, fill }) {
         </div>
         <div className="w-41 border border-lightGray"></div>
         <div className="flex items-center justify-between mt-4">
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center">
             <Image
               alt="Author blog"
               className="h-6 w-6 rounded-full"
@@ -40,9 +40,9 @@ export default function TravelCard({ imageUrl, priceColor, fill }) {
               src="/images/women.png"
               width={32}
             />
-            <span className="font-roboto text-xs text-softGray font-black" aria-label="Author name">ALIVE COOPER</span>
+            <span className="font-roboto text-xs text-softGray font-black ml-2 tracking-sevenLetter" aria-label="Author name">ALIVE COOPER</span>
           </div>
-          <span className="font-roboto text-xs text-softGray font-black" aria-label="blog publication MAY 02">MAY 02</span>
+          <span className="font-roboto text-xs text-softGray font-black tracking-sevenLetter" aria-label="blog publication MAY 02">MAY 02</span>
         </div>
       </div>
     </div>

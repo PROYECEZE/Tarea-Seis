@@ -26,7 +26,7 @@ export default function Home() {
                 <input className="pl-2 pr-4 py-2 w-full rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 placeholder:text-lightBlack font-black" placeholder="Search" type="search"/>
                 <search className="absolute left-3 top-2.5 h-5 w-5 text-gray-400"/>
               </div>
-              <span className="text-xs text-lightBlue font-black font-roboto text-postInfoss" aria-label="123 blog found">123 RESULTS</span>
+              <span className="text-xs text-lightBlue font-black font-roboto text-postInfoss tracking-eightLetter" aria-label="123 blog found">123 RESULTS</span>
               <button className="ml-5 bg-intenseBlue hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md font-roboto text-postInfo"> Search </button>
             </div>
           </div>
@@ -47,13 +47,11 @@ export default function Home() {
           </button>
         </section>
       </main>
-      <footer>
-        <div className="container mx-auto px-4 py-8">
+        <footer className="container mx-auto px-4 py-8">
           <p className="text-center text-postInfo text-black font-normal mb-8" aria-hidden="true">
             Landkit. © all rights reserved 2021
           </p>
-        </div>
-      </footer>
+        </footer>
     </>
   );
 }
