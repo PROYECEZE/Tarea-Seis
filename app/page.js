@@ -1,101 +1,59 @@
-import Image from "next/image";
+import Header from "./components/header";
+import Grid from "./components/grids";
+
+const cardData = [
+  { imageUrl: "/images/traveling.png", priceColor: "bg-softGreen" },
+  { imageUrl: "/images/planning.png", priceColor: "bg-softYellow" },
+  { imageUrl: "/images/see.png", priceColor: "bg-softred" },
+  { imageUrl: "/images/traveling.png", priceColor: "bg-softGreen" },
+  { imageUrl: "/images/planning.png", priceColor: "bg-softYellow" },
+  { imageUrl: "/images/see.png", priceColor: "bg-softred" }
+]
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+    <>
+      <Header/>
+      <main>
+        <section className="container max-w-size pt-14 py-8">
+          <div className="rounded-lg bg-white py-2 px-5 shadow-3xl">
+            <div className="flex items-center">
+              <div className="flex relative flex-1 items-center">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.70833 15.0417C12.2061 15.0417 15.0417 12.2061 15.0417 8.70833C15.0417 5.21053 12.2061 2.375 8.70833 2.375C5.21053 2.375 2.375 5.21053 2.375 8.70833C2.375 12.2061 5.21053 15.0417 8.70833 15.0417Z" stroke="#869AB8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M16.6249 16.625L13.1812 13.1813" stroke="#869AB8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                <input className="pl-2 pr-4 py-2 w-full rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 placeholder:text-lightBlack font-black" placeholder="Search" type="search"/>
+                <search className="absolute left-3 top-2.5 h-5 w-5 text-gray-400"/>
+              </div>
+              <span className="text-xs text-lightBlue font-black font-roboto text-postInfoss">123 RESULTS</span>
+              <button className="ml-5 bg-intenseBlue hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md font-roboto text-postInfo"> Search </button>
+            </div>
+          </div>
+        </section>
+        <section className="container max-w-size px-4 py-5 cursor-pointer">
+          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+            {cardData.map((card, index) => (
+              <Grid key={index} {...card} />
+            ))}
+          </div>
+        </section>
+        <section className="container mx-auto px-4 py-20 text-center">
+          <button className="inline-flex items-center space-x-2">
+            <span className="text-intenseBlue font-black font-roboto text-postInfo px-44">Load more</span>
+            <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M9 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
+            </svg>
+          </button>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      <footer>
+        <div className="container mx-auto px-4 py-8">
+          <p className="text-center text-postInfo text-black font-normal">
+            Landkit. © all rights reserved 2021
+          </p>
+        </div>
       </footer>
-    </div>
+    </>
   );
 }
