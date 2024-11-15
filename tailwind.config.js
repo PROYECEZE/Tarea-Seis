@@ -14,13 +14,12 @@ module.exports = {
         lightBlack: '#161C2D',
         lightGray: '#F3F7FB',
         softGray: '#6B7C93',
+        intenseGray: '#B4C2D3',
         softGreen: '#42BA96',
         softYellow:'#F2C94C',
         softred: '#DF4759',
-        yellowGradient: 'linear-gradient(43.15deg, #FFC726 3.03%, #F99716 100%)',
-      },
-      backgroundImage: {
-        yellowGradient: 'linear-gradient(43.15deg, #FFC726 3.03%, #F99716 100%)',
+        intenseYellow: '#F99716',
+        snowBlue:'#D9E2EF',
       },
       fontFamily: {
         roboto: ['roboto']
