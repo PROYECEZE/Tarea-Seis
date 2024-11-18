@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-export default function TravelCard({ imageUrl, priceColor, fill }) {
+export default function TravelCard({ imageUrl, priceColor, fill, price, title, abstract }) {
   return (
     <div className="rounded-lg bg-white shadow-sm transition-shadow hover:shadow-md">
       <div className="relative">
@@ -13,16 +13,16 @@ export default function TravelCard({ imageUrl, priceColor, fill }) {
         <div
           className={`absolute left-4 top-4 rounded-full px-3 py-1 text-xs text-white font-roboto font-black tracking-eightLetter ${priceColor}`} aria-label="blog price $49/MO"
         >
-          $49/MO
+          {price}
         </div>
       </div>
       <div className="p-6">
         <dl>
           <dt className="text-lightBlack font-roboto mb-2 text-xl font-black">
-            Keeping the dream alive by traveling the world.
+            {title}
           </dt>
           <dd className="font-roboto mb-1 text-softGray font-normal">
-            Integrate the latest technologies with an innovative platform...
+            {abstract}
           </dd>
         </dl>
         <div className="flex justify-end mb-2 group" aria-label="add favorite">
