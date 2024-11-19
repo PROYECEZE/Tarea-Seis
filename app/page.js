@@ -4,7 +4,6 @@ import { useState } from "react"
 import Header from "./components/header"
 import TravelCard from "./components/travel-card"
 
-// Datos de las tarjetas (117 items in total)
 const cardData = [
   {
     imageUrl: "/images/traveling.png",
