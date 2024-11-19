@@ -4,6 +4,7 @@ import { useState } from "react"
 import Header from "./components/header"
 import TravelCard from "./components/travel-card"
 
+
 const cardData = [
   {
     imageUrl: "/images/traveling.png",
@@ -1012,7 +1013,7 @@ export default function Home() {
   return (
     <>
       <Header/>
-      <main className="container max-w-size">
+      <main className="container max-w-size flex-grow">
         <section className='mt-14 my-8 rounded-lg bg-white py-2 px-5 shadow-3xl'>
           <form onSubmit={handleSearch} className='flex items-center'>
             <div className='flex relative flex-1 items-center'>
@@ -1050,7 +1051,7 @@ export default function Home() {
               />
             </div>
             <span className="text-xs text-lightBlue font-black font-roboto text-postInfoss tracking-eightLetter ml-4" aria-live="polite">
-              {filteredCards.length} RESULTS
+              {filteredCards.length > 0 ? `${filteredCards.length} RESULTS` : 'NO RESULTS'}
             </span>
             <button
               type="submit"
@@ -1066,7 +1067,20 @@ export default function Home() {
           ))}
         </section>
         {filteredCards.length === 0 && (
-          <p className="text-center text-lg text-gray-600 mt-10">Uh oh.. No results found "{searchQuery}"</p>
+          <section className="flex gap-20 container max-w-size sm:mt-32 mt-0 font-roboto px-0">
+            <div className="flex flex-col items-center justify-center px-5 text-center">
+              <h1 className="md:text-52px text-strongBlue mb-4 font-black text-5xl mt-3">
+                Uh oh.
+              </h1>
+              <p className="text-snowGray mb-8 font-black text-postInfo">
+                We ran into an issue, but don't worry, we'll take care of it for sure.
+              </p>
+              <button className="px-6 py-2.5 text-white text-postInfo font-black bg-intenseBlue hover:bg-blue-700 rounded-md transition-colors">
+                Back to safety
+              </button>
+            </div>
+            <img className="w-100 h-90 hidden sm:flex" src="images/UhOh.png" alt=""/>
+          </section>
         )}
         {filteredCards.length > 0 && visibleItems < filteredCards.length && (
           <section className="py-10 sm:py-20 text-center">

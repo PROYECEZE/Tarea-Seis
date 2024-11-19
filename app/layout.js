@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         <title>andkit</title>
        </head>
       <body
-        className="bg-gray-100">
+        className="bg-gray-100 flex flex-col min-h-screen">
         {children}
       </body>
     </html>

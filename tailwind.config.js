@@ -20,6 +20,8 @@ module.exports = {
         softred: '#DF4759',
         intenseYellow: '#F99716',
         snowBlue:'#D9E2EF',
+        strongBlue:'#12263F',
+        snowGray:'#6E84A3',
       },
       fontFamily: {
         roboto: ['roboto']
@@ -28,6 +30,7 @@ module.exports = {
         postSubtitle: ['21px', '32px'],
         postInfo:['17px', '26px'],
         '43px': ['42px', '52px'],
+        '52px': ['52px', '60px'],
       },
       container: {
         center: true,
@@ -43,6 +46,12 @@ module.exports = {
       letterSpacing: {
         sevenLetter: '0.07em',
         eightLetter:'0.08em',
+      },
+      width: {
+        '100': '590px',
+      },
+      height: {
+        '90': '380px',
       }
     },
   },
