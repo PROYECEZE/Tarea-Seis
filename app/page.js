@@ -1,101 +1,1092 @@
-import Image from "next/image";
+'use client'
+
+import { useState } from "react"
+import Header from "./components/header"
+import TravelCard from "./components/travel-card"
+
+const cardData = [
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "Keeping the dream alive by traveling the world.",
+    abstract: "Integrate the latest technologies with an innovative platform..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Keeping the dream alive by traveling the world.",
+    abstract: "Integrate the latest technologies with an innovative platform..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Keeping the dream alive by traveling the world.",
+    abstract: "Integrate the latest technologies with an innovative platform..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "Keeping the dream alive by traveling the world.",
+    abstract: "Integrate the latest technologies with an innovative platform..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Keeping the dream alive by traveling the world.",
+    abstract: "Integrate the latest technologies with an innovative platform..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Keeping the dream alive by traveling the world.",
+    abstract: "Integrate the latest technologies with an innovative platform..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "Keeping the dream alive by traveling the world.",
+    abstract: "Integrate the latest technologies with an innovative platform..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Planning your next big adventure",
+    abstract: "Discover new horizons and plan your next exciting journey..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "See the world through new eyes",
+    abstract: "Experience diverse cultures and broaden your perspectives..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "The art of solo travel",
+    abstract: "Embark on a journey of self-discovery and independence..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Budget-friendly travel tips",
+    abstract: "Learn how to explore the world without breaking the bank..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Sustainable travel practices",
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "Keeping the dream alive by traveling the world.",
+    abstract: "Integrate the latest technologies with an innovative platform..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Planning your next big adventure",
+    abstract: "Discover new horizons and plan your next exciting journey..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "See the world through new eyes",
+    abstract: "Experience diverse cultures and broaden your perspectives..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "The art of solo travel",
+    abstract: "Embark on a journey of self-discovery and independence..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Budget-friendly travel tips",
+    abstract: "Learn how to explore the world without breaking the bank..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Sustainable travel practices",
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "Keeping the dream alive by traveling the world.",
+    abstract: "Integrate the latest technologies with an innovative platform..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Planning your next big adventure",
+    abstract: "Discover new horizons and plan your next exciting journey..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "See the world through new eyes",
+    abstract: "Experience diverse cultures and broaden your perspectives..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "The art of solo travel",
+    abstract: "Embark on a journey of self-discovery and independence..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Budget-friendly travel tips",
+    abstract: "Learn how to explore the world without breaking the bank..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Sustainable travel practices",
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "Keeping the dream alive by traveling the world.",
+    abstract: "Integrate the latest technologies with an innovative platform..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Planning your next big adventure",
+    abstract: "Discover new horizons and plan your next exciting journey..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "See the world through new eyes",
+    abstract: "Experience diverse cultures and broaden your perspectives..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "The art of solo travel",
+    abstract: "Embark on a journey of self-discovery and independence..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Budget-friendly travel tips",
+    abstract: "Learn how to explore the world without breaking the bank..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Sustainable travel practices",
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "Keeping the dream alive by traveling the world.",
+    abstract: "Integrate the latest technologies with an innovative platform..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Planning your next big adventure",
+    abstract: "Discover new horizons and plan your next exciting journey..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "See the world through new eyes",
+    abstract: "Experience diverse cultures and broaden your perspectives..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "The art of solo travel",
+    abstract: "Embark on a journey of self-discovery and independence..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Budget-friendly travel tips",
+    abstract: "Learn how to explore the world without breaking the bank..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Sustainable travel practices",
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+  },  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "Keeping the dream alive by traveling the world.",
+    abstract: "Integrate the latest technologies with an innovative platform..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Planning your next big adventure",
+    abstract: "Discover new horizons and plan your next exciting journey..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "See the world through new eyes",
+    abstract: "Experience diverse cultures and broaden your perspectives..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "The art of solo travel",
+    abstract: "Embark on a journey of self-discovery and independence..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Budget-friendly travel tips",
+    abstract: "Learn how to explore the world without breaking the bank..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Sustainable travel practices",
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "Keeping the dream alive by traveling the world.",
+    abstract: "Integrate the latest technologies with an innovative platform..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Planning your next big adventure",
+    abstract: "Discover new horizons and plan your next exciting journey..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "See the world through new eyes",
+    abstract: "Experience diverse cultures and broaden your perspectives..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "The art of solo travel",
+    abstract: "Embark on a journey of self-discovery and independence..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Budget-friendly travel tips",
+    abstract: "Learn how to explore the world without breaking the bank..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Sustainable travel practices",
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+  },  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "Keeping the dream alive by traveling the world.",
+    abstract: "Integrate the latest technologies with an innovative platform..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Planning your next big adventure",
+    abstract: "Discover new horizons and plan your next exciting journey..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "See the world through new eyes",
+    abstract: "Experience diverse cultures and broaden your perspectives..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "The art of solo travel",
+    abstract: "Embark on a journey of self-discovery and independence..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Budget-friendly travel tips",
+    abstract: "Learn how to explore the world without breaking the bank..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Sustainable travel practices",
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "Keeping the dream alive by traveling the world.",
+    abstract: "Integrate the latest technologies with an innovative platform..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Planning your next big adventure",
+    abstract: "Discover new horizons and plan your next exciting journey..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "See the world through new eyes",
+    abstract: "Experience diverse cultures and broaden your perspectives..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "The art of solo travel",
+    abstract: "Embark on a journey of self-discovery and independence..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Budget-friendly travel tips",
+    abstract: "Learn how to explore the world without breaking the bank..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Sustainable travel practices",
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "Keeping the dream alive by traveling the world.",
+    abstract: "Integrate the latest technologies with an innovative platform..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Planning your next big adventure",
+    abstract: "Discover new horizons and plan your next exciting journey..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "See the world through new eyes",
+    abstract: "Experience diverse cultures and broaden your perspectives..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "The art of solo travel",
+    abstract: "Embark on a journey of self-discovery and independence..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Budget-friendly travel tips",
+    abstract: "Learn how to explore the world without breaking the bank..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Sustainable travel practices",
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "Keeping the dream alive by traveling the world.",
+    abstract: "Integrate the latest technologies with an innovative platform..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Planning your next big adventure",
+    abstract: "Discover new horizons and plan your next exciting journey..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "See the world through new eyes",
+    abstract: "Experience diverse cultures and broaden your perspectives..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "The art of solo travel",
+    abstract: "Embark on a journey of self-discovery and independence..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Budget-friendly travel tips",
+    abstract: "Learn how to explore the world without breaking the bank..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Sustainable travel practices",
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "Keeping the dream alive by traveling the world.",
+    abstract: "Integrate the latest technologies with an innovative platform..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Planning your next big adventure",
+    abstract: "Discover new horizons and plan your next exciting journey..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "See the world through new eyes",
+    abstract: "Experience diverse cultures and broaden your perspectives..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "The art of solo travel",
+    abstract: "Embark on a journey of self-discovery and independence..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Budget-friendly travel tips",
+    abstract: "Learn how to explore the world without breaking the bank..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Sustainable travel practices",
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "Keeping the dream alive by traveling the world.",
+    abstract: "Integrate the latest technologies with an innovative platform..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Planning your next big adventure",
+    abstract: "Discover new horizons and plan your next exciting journey..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "See the world through new eyes",
+    abstract: "Experience diverse cultures and broaden your perspectives..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "The art of solo travel",
+    abstract: "Embark on a journey of self-discovery and independence..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Budget-friendly travel tips",
+    abstract: "Learn how to explore the world without breaking the bank..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Sustainable travel practices",
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "Keeping the dream alive by traveling the world.",
+    abstract: "Integrate the latest technologies with an innovative platform..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Planning your next big adventure",
+    abstract: "Discover new horizons and plan your next exciting journey..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "See the world through new eyes",
+    abstract: "Experience diverse cultures and broaden your perspectives..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "The art of solo travel",
+    abstract: "Embark on a journey of self-discovery and independence..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Budget-friendly travel tips",
+    abstract: "Learn how to explore the world without breaking the bank..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Sustainable travel practices",
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "Keeping the dream alive by traveling the world.",
+    abstract: "Integrate the latest technologies with an innovative platform..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Planning your next big adventure",
+    abstract: "Discover new horizons and plan your next exciting journey..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "See the world through new eyes",
+    abstract: "Experience diverse cultures and broaden your perspectives..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "The art of solo travel",
+    abstract: "Embark on a journey of self-discovery and independence..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Budget-friendly travel tips",
+    abstract: "Learn how to explore the world without breaking the bank..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Sustainable travel practices",
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "Keeping the dream alive by traveling the world.",
+    abstract: "Integrate the latest technologies with an innovative platform..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Planning your next big adventure",
+    abstract: "Discover new horizons and plan your next exciting journey..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "See the world through new eyes",
+    abstract: "Experience diverse cultures and broaden your perspectives..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "The art of solo travel",
+    abstract: "Embark on a journey of self-discovery and independence..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Budget-friendly travel tips",
+    abstract: "Learn how to explore the world without breaking the bank..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Sustainable travel practices",
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "Keeping the dream alive by traveling the world.",
+    abstract: "Integrate the latest technologies with an innovative platform..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Planning your next big adventure",
+    abstract: "Discover new horizons and plan your next exciting journey..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "See the world through new eyes",
+    abstract: "Experience diverse cultures and broaden your perspectives..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "The art of solo travel",
+    abstract: "Embark on a journey of self-discovery and independence..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Budget-friendly travel tips",
+    abstract: "Learn how to explore the world without breaking the bank..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Sustainable travel practices",
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "Keeping the dream alive by traveling the world.",
+    abstract: "Integrate the latest technologies with an innovative platform..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Planning your next big adventure",
+    abstract: "Discover new horizons and plan your next exciting journey..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "See the world through new eyes",
+    abstract: "Experience diverse cultures and broaden your perspectives..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "The art of solo travel",
+    abstract: "Embark on a journey of self-discovery and independence..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Budget-friendly travel tips",
+    abstract: "Learn how to explore the world without breaking the bank..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Sustainable travel practices",
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "Keeping the dream alive by traveling the world.",
+    abstract: "Integrate the latest technologies with an innovative platform..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Planning your next big adventure",
+    abstract: "Discover new horizons and plan your next exciting journey..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "See the world through new eyes",
+    abstract: "Experience diverse cultures and broaden your perspectives..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "The art of solo travel",
+    abstract: "Embark on a journey of self-discovery and independence..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Budget-friendly travel tips",
+    abstract: "Learn how to explore the world without breaking the bank..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Sustainable travel practices",
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+  },
+  {
+    imageUrl: "/images/traveling.png",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "Keeping the dream alive by traveling the world.",
+    abstract: "Integrate the latest technologies with an innovative platform..."
+  },
+  {
+    imageUrl: "/images/planning.png",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Planning your next big adventure",
+    abstract: "Discover new horizons and plan your next exciting journey..."
+  },
+  {
+    imageUrl: "/images/see.png",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "See the world through new eyes",
+    abstract: "Experience diverse cultures and broaden your perspectives..."
+  }
+];
+
+const ITEMS_PER_PAGE = 6;
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const [searchQuery, setSearchQuery] = useState('')
+  const [visibleItems, setVisibleItems] = useState(ITEMS_PER_PAGE)
+  
+  const filteredCards = cardData.filter(card => 
+    card.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    card.abstract.toLowerCase().includes(searchQuery.toLowerCase())
+  )
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+  const handleSearch = (e) => {
+    e.preventDefault()
+    setVisibleItems(ITEMS_PER_PAGE)
+  }
+
+  const handleLoadMore = () => {
+    setVisibleItems(prevVisibleItems => prevVisibleItems + ITEMS_PER_PAGE)
+  }
+
+  return (
+    <>
+      <Header/>
+      <main className="container max-w-size">
+        <section className='mt-14 my-8 rounded-lg bg-white py-2 px-5 shadow-3xl'>
+          <form onSubmit={handleSearch} className='flex items-center'>
+            <div className='flex relative flex-1 items-center'>
+              <svg
+                aria-hidden="true"
+                width="19"
+                height="19"
+                viewBox="0 0 19 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute left-3 top-1/2 transform -translate-y-1/2"
+              >
+                <path
+                  d="M8.70833 15.0417C12.2061 15.0417 15.0417 12.2061 15.0417 8.70833C15.0417 5.21053 12.2061 2.375 8.70833 2.375C5.21053 2.375 2.375 5.21053 2.375 8.70833C2.375 12.2061 5.21053 15.0417 8.70833 15.0417Z"
+                  stroke="#869AB8"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M16.6249 16.625L13.1812 13.1813"
+                  stroke="#869AB8"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              <input
+                className="pl-10 pr-4 py-2 w-full rounded-md border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 placeholder:text-lightBlack font-black"
+                placeholder="Search"
+                type="search"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                aria-label="Search input"
+              />
+            </div>
+            <span className="text-xs text-lightBlue font-black font-roboto text-postInfoss tracking-eightLetter ml-4" aria-live="polite">
+              {filteredCards.length} RESULTS
+            </span>
+            <button
+              type="submit"
+              className="ml-5 bg-intenseBlue hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md font-roboto text-postInfo"
+            >
+              Search
+            </button>
+          </form>
+        </section>
+        <section className='py-5 cursor-pointer grid gap-10 md:grid-cols-2 lg:grid-cols-3'>
+          {filteredCards.slice(0, visibleItems).map((card, index) => (
+            <TravelCard key={index} {...card} />
+          ))}
+        </section>
+        {filteredCards.length === 0 && (
+          <p className="text-center text-lg text-gray-600 mt-10">Uh oh.. No results found "{searchQuery}"</p>
+        )}
+        {filteredCards.length > 0 && visibleItems < filteredCards.length && (
+          <section className="py-10 sm:py-20 text-center">
+            <button 
+              onClick={handleLoadMore}
+              className="flex items-center m-auto border border-snowBlue rounded hover:bg-blue-100"
+            >
+              <span className="text-intenseBlue font-black font-roboto text-postInfo p-1 px-10 sm:py-3 sm:px-52">Load more</span>
+              <svg className="mr-8" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path fillRule="evenodd" clipRule="evenodd" d="M6.52642 0.21967C6.23353 -0.0732233 5.75866 -0.0732233 5.46576 0.21967C5.17287 0.512563 5.17287 0.987437 5.46576 1.28033L9.43543 5.25H0.75C0.335786 5.25 0 5.58579 0 6C0 6.41421 0.335786 6.75 0.75 6.75H9.43543L5.46576 10.7197C5.17287 11.0126 5.17287 11.4874 5.46576 11.7803C5.75866 12.0732 6.23353 12.0732 6.52642 11.7803L11.7328 6.57398C11.8962 6.4364 12 6.23033 12 6C12 5.76967 11.8962 5.56359 11.7328 5.42601L6.52642 0.21967Z" fill="#335EEA"/>
+              </svg>
+            </button>
+          </section>
+        )}
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      <footer className="container mx-auto px-4 py-8">
+        <p className="text-center text-postInfo text-black font-normal mb-8" aria-hidden="true">
+          Landkit. © all rights reserved 2021
+        </p>
       </footer>
-    </div>
+    </>
   );
 }

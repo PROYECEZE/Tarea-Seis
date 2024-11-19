@@ -20,9 +20,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta charSet="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+        <title>andkit</title>
+       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+        className="bg-gray-100">
         {children}
       </body>
     </html>
