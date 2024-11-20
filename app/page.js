@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from "react"
-import Link from "next/link"
 import Header from "./components/header"
 import TravelCard from "./components/travel-card"
 
@@ -21,7 +20,8 @@ const cardData = [
     fill: "currentColor",
     price: "$49/MO",
     title: "Keeping the dream alive by traveling the world.",
-    abstract: "Integrate the latest technologies with an innovative platform..."
+    abstract: "Integrate the latest technologies with an innovative platform...",
+    link: "/post"
   },
   {
     imageUrl: "/images/see.png",
@@ -45,7 +45,8 @@ const cardData = [
     fill: "currentColor",
     price: "$49/MO",
     title: "Keeping the dream alive by traveling the world.",
-    abstract: "Integrate the latest technologies with an innovative platform..."
+    abstract: "Integrate the latest technologies with an innovative platform...",
+    link: "/post"
   },
   {
     imageUrl: "/images/see.png",
@@ -1063,18 +1064,9 @@ export default function Home() {
           </form>
         </section>
         <section className='py-5 cursor-pointer grid gap-10 md:grid-cols-2 lg:grid-cols-3'>
-          {filteredCards.slice(0, visibleItems).map((card, index) => {
-            if (card.imageUrl === "/images/planning.png" && 
-              card.title === "Keeping the dream alive by traveling the world.") {
-              return (
-                <Link href="/post" key={index}>
-                  <TravelCard {...card} />
-                </Link>
-              )
-            } else {
-              return <TravelCard key={index} {...card} />
-            }
-          })}
+          {filteredCards.slice(0, visibleItems).map((card, index) => (
+            <TravelCard key={index} {...card} />
+          ))}
         </section>
         {filteredCards.length === 0 && (
           <section className="flex gap-20 container max-w-size sm:mt-32 mt-0 font-roboto px-0">

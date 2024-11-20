@@ -1,8 +1,9 @@
 import Image from "next/image"
 
-export default function TravelCard({ imageUrl, priceColor, fill, price, title, abstract }) {
+export default function TravelCard({ imageUrl, priceColor, fill, price, title, abstract, link = null}) {
   return (
-    <div className="rounded-lg bg-white shadow-sm transition-shadow hover:shadow-md">
+    <div className="rounded-lg bg-white shadow-sm transition-shadow hover:shadow-md relative">
+      {link && <a href={link} className="absolute inset-0" aria-label="read the post content"></a>}
       <div className="relative">
         <Image
           alt="Photos of works"

@@ -1,4 +1,4 @@
-import Header from "../components/header";
+import Header from "../components/header"
 
 export default function Post() {
   return (
@@ -34,10 +34,10 @@ export default function Post() {
           </a>
         </div>
       </div>
-      <div className="mt-8">
-        <img src="images/works.jpg" alt="Person looking at wall with photos" width="800" height="400"/>
-        <p className="mt-4 text-center text-sm text-lightBlue font-black"> This is a caption on this photo for reference </p>
-      </div>
+      <figura className = "mt-8" >
+        <img src = "images/works.jpg"  alt = "Persona mirando pared con fotos"  width = "800"  height = "400"/>
+        <figcaption className = "mt-4 text-center text-sm text-lightBlue font-black" > Este es un título de referencia para esta foto. </figcaption>
+      </figura>
       <div className="mt-10 max-w-none">
         <p className="font-black text-base sm:text-postInfo"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
         <p className="pt-9 font-black text-base sm:text-postInfo"> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? </p>
