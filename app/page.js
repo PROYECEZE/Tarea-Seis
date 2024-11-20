@@ -7,15 +7,15 @@ import TravelCard from "./components/travel-card"
 
 const cardData = [
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
     title: "Keeping the dream alive by traveling the world.",
-    abstract: "Integrate the latest technologies with an innovative platform..."
+    abstract: "Integrate the latest technologies with an innovative platform...",
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -24,15 +24,15 @@ const cardData = [
     link: "/post"
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
     title: "Keeping the dream alive by traveling the world.",
-    abstract: "Integrate the latest technologies with an innovative platform..."
+    abstract: "Integrate the latest technologies with an innovative platform...",
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -40,7 +40,7 @@ const cardData = [
     abstract: "Integrate the latest technologies with an innovative platform..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -49,7 +49,7 @@ const cardData = [
     link: "/post"
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -57,7 +57,7 @@ const cardData = [
     abstract: "Integrate the latest technologies with an innovative platform..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -65,7 +65,7 @@ const cardData = [
     abstract: "Integrate the latest technologies with an innovative platform..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -73,15 +73,16 @@ const cardData = [
     abstract: "Discover new horizons and plan your next exciting journey..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
     title: "See the world through new eyes",
-    abstract: "Experience diverse cultures and broaden your perspectives..."
+    abstract: "Experience diverse cultures and broaden your perspectives...",
+    link: "/postPerspective"
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -89,7 +90,7 @@ const cardData = [
     abstract: "Embark on a journey of self-discovery and independence..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -97,7 +98,7 @@ const cardData = [
     abstract: "Learn how to explore the world without breaking the bank..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -105,7 +106,7 @@ const cardData = [
     abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -113,7 +114,7 @@ const cardData = [
     abstract: "Integrate the latest technologies with an innovative platform..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -121,7 +122,7 @@ const cardData = [
     abstract: "Discover new horizons and plan your next exciting journey..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -129,7 +130,7 @@ const cardData = [
     abstract: "Experience diverse cultures and broaden your perspectives..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -137,7 +138,7 @@ const cardData = [
     abstract: "Embark on a journey of self-discovery and independence..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -145,7 +146,7 @@ const cardData = [
     abstract: "Learn how to explore the world without breaking the bank..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -153,7 +154,7 @@ const cardData = [
     abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -161,7 +162,7 @@ const cardData = [
     abstract: "Integrate the latest technologies with an innovative platform..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -169,7 +170,7 @@ const cardData = [
     abstract: "Discover new horizons and plan your next exciting journey..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -177,7 +178,7 @@ const cardData = [
     abstract: "Experience diverse cultures and broaden your perspectives..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -185,7 +186,7 @@ const cardData = [
     abstract: "Embark on a journey of self-discovery and independence..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -193,7 +194,7 @@ const cardData = [
     abstract: "Learn how to explore the world without breaking the bank..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -201,7 +202,7 @@ const cardData = [
     abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -209,7 +210,7 @@ const cardData = [
     abstract: "Integrate the latest technologies with an innovative platform..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -217,7 +218,7 @@ const cardData = [
     abstract: "Discover new horizons and plan your next exciting journey..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -225,7 +226,7 @@ const cardData = [
     abstract: "Experience diverse cultures and broaden your perspectives..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -233,7 +234,7 @@ const cardData = [
     abstract: "Embark on a journey of self-discovery and independence..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -241,7 +242,7 @@ const cardData = [
     abstract: "Learn how to explore the world without breaking the bank..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -249,7 +250,7 @@ const cardData = [
     abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -257,7 +258,7 @@ const cardData = [
     abstract: "Integrate the latest technologies with an innovative platform..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -265,7 +266,7 @@ const cardData = [
     abstract: "Discover new horizons and plan your next exciting journey..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -273,7 +274,7 @@ const cardData = [
     abstract: "Experience diverse cultures and broaden your perspectives..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -281,7 +282,7 @@ const cardData = [
     abstract: "Embark on a journey of self-discovery and independence..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -289,109 +290,14 @@ const cardData = [
     abstract: "Learn how to explore the world without breaking the bank..."
   },
   {
-    imageUrl: "/images/see.png",
-    priceColor: "bg-softred",
-    fill: "currentColor",
-    price: "$49/MO",
-    title: "Sustainable travel practices",
-    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
-  },  {
-    imageUrl: "/images/traveling.png",
-    priceColor: "bg-softGreen",
-    fill: "#F99716",
-    price: "$49/MO",
-    title: "Keeping the dream alive by traveling the world.",
-    abstract: "Integrate the latest technologies with an innovative platform..."
-  },
-  {
-    imageUrl: "/images/planning.png",
-    priceColor: "bg-softYellow",
-    fill: "currentColor",
-    price: "$49/MO",
-    title: "Planning your next big adventure",
-    abstract: "Discover new horizons and plan your next exciting journey..."
-  },
-  {
-    imageUrl: "/images/see.png",
-    priceColor: "bg-softred",
-    fill: "currentColor",
-    price: "$49/MO",
-    title: "See the world through new eyes",
-    abstract: "Experience diverse cultures and broaden your perspectives..."
-  },
-  {
-    imageUrl: "/images/traveling.png",
-    priceColor: "bg-softGreen",
-    fill: "#F99716",
-    price: "$49/MO",
-    title: "The art of solo travel",
-    abstract: "Embark on a journey of self-discovery and independence..."
-  },
-  {
-    imageUrl: "/images/planning.png",
-    priceColor: "bg-softYellow",
-    fill: "currentColor",
-    price: "$49/MO",
-    title: "Budget-friendly travel tips",
-    abstract: "Learn how to explore the world without breaking the bank..."
-  },
-  {
-    imageUrl: "/images/see.png",
-    priceColor: "bg-softred",
-    fill: "currentColor",
-    price: "$49/MO",
-    title: "Sustainable travel practices",
-    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
-  },
-  {
-    imageUrl: "/images/traveling.png",
-    priceColor: "bg-softGreen",
-    fill: "#F99716",
-    price: "$49/MO",
-    title: "Keeping the dream alive by traveling the world.",
-    abstract: "Integrate the latest technologies with an innovative platform..."
-  },
-  {
-    imageUrl: "/images/planning.png",
-    priceColor: "bg-softYellow",
-    fill: "currentColor",
-    price: "$49/MO",
-    title: "Planning your next big adventure",
-    abstract: "Discover new horizons and plan your next exciting journey..."
-  },
-  {
-    imageUrl: "/images/see.png",
-    priceColor: "bg-softred",
-    fill: "currentColor",
-    price: "$49/MO",
-    title: "See the world through new eyes",
-    abstract: "Experience diverse cultures and broaden your perspectives..."
-  },
-  {
-    imageUrl: "/images/traveling.png",
-    priceColor: "bg-softGreen",
-    fill: "#F99716",
-    price: "$49/MO",
-    title: "The art of solo travel",
-    abstract: "Embark on a journey of self-discovery and independence..."
-  },
-  {
-    imageUrl: "/images/planning.png",
-    priceColor: "bg-softYellow",
-    fill: "currentColor",
-    price: "$49/MO",
-    title: "Budget-friendly travel tips",
-    abstract: "Learn how to explore the world without breaking the bank..."
-  },
-  {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
     title: "Sustainable travel practices",
     abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
   },  {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -399,7 +305,7 @@ const cardData = [
     abstract: "Integrate the latest technologies with an innovative platform..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -407,7 +313,7 @@ const cardData = [
     abstract: "Discover new horizons and plan your next exciting journey..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -415,7 +321,7 @@ const cardData = [
     abstract: "Experience diverse cultures and broaden your perspectives..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -423,7 +329,7 @@ const cardData = [
     abstract: "Embark on a journey of self-discovery and independence..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -431,7 +337,7 @@ const cardData = [
     abstract: "Learn how to explore the world without breaking the bank..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -439,7 +345,7 @@ const cardData = [
     abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -447,7 +353,7 @@ const cardData = [
     abstract: "Integrate the latest technologies with an innovative platform..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -455,7 +361,7 @@ const cardData = [
     abstract: "Discover new horizons and plan your next exciting journey..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -463,7 +369,7 @@ const cardData = [
     abstract: "Experience diverse cultures and broaden your perspectives..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -471,7 +377,7 @@ const cardData = [
     abstract: "Embark on a journey of self-discovery and independence..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -479,15 +385,14 @@ const cardData = [
     abstract: "Learn how to explore the world without breaking the bank..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
     title: "Sustainable travel practices",
     abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
-  },
-  {
-    imageUrl: "/images/traveling.png",
+  },  {
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -495,7 +400,7 @@ const cardData = [
     abstract: "Integrate the latest technologies with an innovative platform..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -503,7 +408,7 @@ const cardData = [
     abstract: "Discover new horizons and plan your next exciting journey..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -511,7 +416,7 @@ const cardData = [
     abstract: "Experience diverse cultures and broaden your perspectives..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -519,7 +424,7 @@ const cardData = [
     abstract: "Embark on a journey of self-discovery and independence..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -527,7 +432,7 @@ const cardData = [
     abstract: "Learn how to explore the world without breaking the bank..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -535,7 +440,7 @@ const cardData = [
     abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -543,7 +448,7 @@ const cardData = [
     abstract: "Integrate the latest technologies with an innovative platform..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -551,7 +456,7 @@ const cardData = [
     abstract: "Discover new horizons and plan your next exciting journey..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -559,7 +464,7 @@ const cardData = [
     abstract: "Experience diverse cultures and broaden your perspectives..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -567,7 +472,7 @@ const cardData = [
     abstract: "Embark on a journey of self-discovery and independence..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -575,7 +480,7 @@ const cardData = [
     abstract: "Learn how to explore the world without breaking the bank..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -583,7 +488,7 @@ const cardData = [
     abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -591,7 +496,7 @@ const cardData = [
     abstract: "Integrate the latest technologies with an innovative platform..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -599,7 +504,7 @@ const cardData = [
     abstract: "Discover new horizons and plan your next exciting journey..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -607,7 +512,7 @@ const cardData = [
     abstract: "Experience diverse cultures and broaden your perspectives..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -615,7 +520,7 @@ const cardData = [
     abstract: "Embark on a journey of self-discovery and independence..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -623,7 +528,7 @@ const cardData = [
     abstract: "Learn how to explore the world without breaking the bank..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -631,7 +536,7 @@ const cardData = [
     abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -639,7 +544,7 @@ const cardData = [
     abstract: "Integrate the latest technologies with an innovative platform..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -647,7 +552,7 @@ const cardData = [
     abstract: "Discover new horizons and plan your next exciting journey..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -655,7 +560,7 @@ const cardData = [
     abstract: "Experience diverse cultures and broaden your perspectives..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -663,7 +568,7 @@ const cardData = [
     abstract: "Embark on a journey of self-discovery and independence..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -671,7 +576,7 @@ const cardData = [
     abstract: "Learn how to explore the world without breaking the bank..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -679,7 +584,7 @@ const cardData = [
     abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -687,7 +592,7 @@ const cardData = [
     abstract: "Integrate the latest technologies with an innovative platform..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -695,7 +600,7 @@ const cardData = [
     abstract: "Discover new horizons and plan your next exciting journey..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -703,7 +608,7 @@ const cardData = [
     abstract: "Experience diverse cultures and broaden your perspectives..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -711,7 +616,7 @@ const cardData = [
     abstract: "Embark on a journey of self-discovery and independence..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -719,7 +624,7 @@ const cardData = [
     abstract: "Learn how to explore the world without breaking the bank..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -727,7 +632,7 @@ const cardData = [
     abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -735,7 +640,7 @@ const cardData = [
     abstract: "Integrate the latest technologies with an innovative platform..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -743,7 +648,7 @@ const cardData = [
     abstract: "Discover new horizons and plan your next exciting journey..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -751,7 +656,7 @@ const cardData = [
     abstract: "Experience diverse cultures and broaden your perspectives..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -759,7 +664,7 @@ const cardData = [
     abstract: "Embark on a journey of self-discovery and independence..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -767,7 +672,7 @@ const cardData = [
     abstract: "Learn how to explore the world without breaking the bank..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -775,7 +680,7 @@ const cardData = [
     abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -783,7 +688,7 @@ const cardData = [
     abstract: "Integrate the latest technologies with an innovative platform..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -791,7 +696,7 @@ const cardData = [
     abstract: "Discover new horizons and plan your next exciting journey..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -799,7 +704,7 @@ const cardData = [
     abstract: "Experience diverse cultures and broaden your perspectives..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -807,7 +712,7 @@ const cardData = [
     abstract: "Embark on a journey of self-discovery and independence..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -815,7 +720,7 @@ const cardData = [
     abstract: "Learn how to explore the world without breaking the bank..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -823,7 +728,7 @@ const cardData = [
     abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -831,7 +736,7 @@ const cardData = [
     abstract: "Integrate the latest technologies with an innovative platform..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -839,7 +744,7 @@ const cardData = [
     abstract: "Discover new horizons and plan your next exciting journey..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -847,7 +752,7 @@ const cardData = [
     abstract: "Experience diverse cultures and broaden your perspectives..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -855,7 +760,7 @@ const cardData = [
     abstract: "Embark on a journey of self-discovery and independence..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -863,7 +768,7 @@ const cardData = [
     abstract: "Learn how to explore the world without breaking the bank..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -871,7 +776,7 @@ const cardData = [
     abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -879,7 +784,7 @@ const cardData = [
     abstract: "Integrate the latest technologies with an innovative platform..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -887,7 +792,7 @@ const cardData = [
     abstract: "Discover new horizons and plan your next exciting journey..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -895,7 +800,7 @@ const cardData = [
     abstract: "Experience diverse cultures and broaden your perspectives..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -903,7 +808,7 @@ const cardData = [
     abstract: "Embark on a journey of self-discovery and independence..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -911,7 +816,7 @@ const cardData = [
     abstract: "Learn how to explore the world without breaking the bank..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -919,7 +824,7 @@ const cardData = [
     abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -927,7 +832,7 @@ const cardData = [
     abstract: "Integrate the latest technologies with an innovative platform..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -935,7 +840,7 @@ const cardData = [
     abstract: "Discover new horizons and plan your next exciting journey..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -943,7 +848,7 @@ const cardData = [
     abstract: "Experience diverse cultures and broaden your perspectives..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -951,7 +856,7 @@ const cardData = [
     abstract: "Embark on a journey of self-discovery and independence..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -959,7 +864,7 @@ const cardData = [
     abstract: "Learn how to explore the world without breaking the bank..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -967,7 +872,7 @@ const cardData = [
     abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
   },
   {
-    imageUrl: "/images/traveling.png",
+    imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
@@ -975,7 +880,7 @@ const cardData = [
     abstract: "Integrate the latest technologies with an innovative platform..."
   },
   {
-    imageUrl: "/images/planning.png",
+    imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
@@ -983,7 +888,103 @@ const cardData = [
     abstract: "Discover new horizons and plan your next exciting journey..."
   },
   {
-    imageUrl: "/images/see.png",
+    imageUrl: "/images/see.jpg",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "See the world through new eyes",
+    abstract: "Experience diverse cultures and broaden your perspectives..."
+  },
+  {
+    imageUrl: "/images/traveling.jpg",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "The art of solo travel",
+    abstract: "Embark on a journey of self-discovery and independence..."
+  },
+  {
+    imageUrl: "/images/planning.jpg",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Budget-friendly travel tips",
+    abstract: "Learn how to explore the world without breaking the bank..."
+  },
+  {
+    imageUrl: "/images/see.jpg",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Sustainable travel practices",
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+  },
+  {
+    imageUrl: "/images/traveling.jpg",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "Keeping the dream alive by traveling the world.",
+    abstract: "Integrate the latest technologies with an innovative platform..."
+  },
+  {
+    imageUrl: "/images/planning.jpg",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Planning your next big adventure",
+    abstract: "Discover new horizons and plan your next exciting journey..."
+  },
+  {
+    imageUrl: "/images/see.jpg",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "See the world through new eyes",
+    abstract: "Experience diverse cultures and broaden your perspectives..."
+  },
+  {
+    imageUrl: "/images/traveling.jpg",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "The art of solo travel",
+    abstract: "Embark on a journey of self-discovery and independence..."
+  },
+  {
+    imageUrl: "/images/planning.jpg",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Budget-friendly travel tips",
+    abstract: "Learn how to explore the world without breaking the bank..."
+  },
+  {
+    imageUrl: "/images/see.jpg",
+    priceColor: "bg-softred",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Sustainable travel practices",
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+  },
+  {
+    imageUrl: "/images/traveling.jpg",
+    priceColor: "bg-softGreen",
+    fill: "#F99716",
+    price: "$49/MO",
+    title: "Keeping the dream alive by traveling the world.",
+    abstract: "Integrate the latest technologies with an innovative platform..."
+  },
+  {
+    imageUrl: "/images/planning.jpg",
+    priceColor: "bg-softYellow",
+    fill: "currentColor",
+    price: "$49/MO",
+    title: "Planning your next big adventure",
+    abstract: "Discover new horizons and plan your next exciting journey..."
+  },
+  {
+    imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
@@ -1081,7 +1082,7 @@ export default function Home() {
                 Back to safety
               </button>
             </div>
-            <img className="w-100 h-90 hidden sm:flex" src="images/UhOh.png" alt=""/>
+            <img className="w-100 h-90 hidden sm:flex" src="images/UhOh.jpg" alt=""/>
           </section>
         )}
         {filteredCards.length > 0 && visibleItems < filteredCards.length && (
