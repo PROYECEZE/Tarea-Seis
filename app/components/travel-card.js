@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-export default function TravelCard({ imageUrl, priceColor, fill, price, title, abstract, link = null}) {
+export default function TravelCard({ imageUrl, priceColor, fill, price, title, abstract, authorUrl, authorBlog, published, link = null}) {
   return (
     <div className="rounded-lg bg-white shadow-sm transition-shadow hover:shadow-md relative">
       {link && <a href={link} className="absolute inset-0" aria-label="read the post content"></a>}
@@ -38,12 +38,12 @@ export default function TravelCard({ imageUrl, priceColor, fill, price, title, a
               alt="Blog author"
               className="h-6 w-6 rounded-full"
               height={32}
-              src="/images/women.png"
+              src={authorUrl}
               width={32}
             />
-            <span className="font-roboto text-xs text-softGray font-black ml-2 tracking-sevenLetter" aria-label="Author name">ALIVE COOPER</span>
+            <span className="font-roboto text-xs text-softGray font-black ml-2 tracking-sevenLetter" aria-label="Author name">{authorBlog}</span>
           </div>
-          <span className="font-roboto text-xs text-softGray font-black tracking-sevenLetter" aria-label="blog publication MAY 02">MAY 02</span>
+          <span className="font-roboto text-xs text-softGray font-black tracking-sevenLetter" aria-label="blog publication MAY 02">{published}</span>
         </div>
       </div>
     </div>
