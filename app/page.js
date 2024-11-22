@@ -11,455 +11,625 @@ const cardData = [
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"ALIVE COOPER",
+    published:"MAY 02",
     title: "Keeping the dream alive by traveling the world.",
     abstract: "Integrate the latest technologies with an innovative platform...",
+    authorUrl:"/images/author.jpg",
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"ALIVE COOPER",
+    published:"MAY 02",
     title: "Keeping the dream alive by traveling the world.",
     abstract: "Integrate the latest technologies with an innovative platform...",
-    link: "/post"
+    link: "/post",
+    authorUrl:"/images/author.jpg"
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"ALIVE COOPER",
+    published:"MAY 02",
     title: "Keeping the dream alive by traveling the world.",
     abstract: "Integrate the latest technologies with an innovative platform...",
+    authorUrl:"/images/author.jpg"
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"ALIVE COOPER",
+    published:"MAY 02",
     title: "Keeping the dream alive by traveling the world.",
-    abstract: "Integrate the latest technologies with an innovative platform..."
+    abstract: "Integrate the latest technologies with an innovative platform...",
+    authorUrl:"/images/author.jpg"
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"ALIVE COOPER",
+    published:"MAY 02",
     title: "Keeping the dream alive by traveling the world.",
     abstract: "Integrate the latest technologies with an innovative platform...",
-    link: "/post"
+    link: "/post",
+    authorUrl:"/images/author.jpg"
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"ALIVE COOPER",
+    published:"MAY 02",
     title: "Keeping the dream alive by traveling the world.",
-    abstract: "Integrate the latest technologies with an innovative platform..."
+    abstract: "Integrate the latest technologies with an innovative platform...",
+    authorUrl:"/images/author.jpg"
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"EZEQUIEL BLANCO",
+    published:"",
     title: "Keeping the dream alive by traveling the world.",
-    abstract: "Integrate the latest technologies with an innovative platform..."
+    abstract: "Integrate the latest technologies with an innovative platform...",
+    authorUrl:"/images/author2.jpg"
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"EZEQUIEL BLANCO",
+    published:"",
     title: "Planning your next big adventure",
-    abstract: "Discover new horizons and plan your next exciting journey..."
+    abstract: "Discover new horizons and plan your next exciting journey...",
+    authorUrl:"/images/author2.jpg"
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"EZEQUIEL BLANCO",
+    published:"",
     title: "See the world through new eyes",
     abstract: "Experience diverse cultures and broaden your perspectives...",
-    link: "/postPerspective"
+    link: "/postPerspective",
+    authorUrl:"/images/author2.jpg"
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"EZEQUIEL BLANCO",
+    published:"",
     title: "The art of solo travel",
-    abstract: "Embark on a journey of self-discovery and independence..."
+    abstract: "Learn how to explore the world without breaking the bank...",
+    authorUrl:"/images/author2.jpg"
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Budget-friendly travel tips",
-    abstract: "Learn how to explore the world without breaking the bank..."
+    abstract: "Learn how to explore the world without breaking the bank...",
+    authorUrl:"/images/author.jpg"
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Sustainable travel practices",
-    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact...",
+    authorUrl:"/images/author.jpg"
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Keeping the dream alive by traveling the world.",
-    abstract: "Integrate the latest technologies with an innovative platform..."
+    abstract: "Integrate the latest technologies with an innovative platform...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Planning your next big adventure",
-    abstract: "Discover new horizons and plan your next exciting journey..."
+    abstract: "Discover new horizons and plan your next exciting journey...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "See the world through new eyes",
-    abstract: "Experience diverse cultures and broaden your perspectives..."
+    abstract: "Experience diverse cultures and broaden your perspectives...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "The art of solo travel",
-    abstract: "Embark on a journey of self-discovery and independence..."
+    abstract: "Embark on a journey of self-discovery and independence...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Budget-friendly travel tips",
-    abstract: "Learn how to explore the world without breaking the bank..."
+    abstract: "Learn how to explore the world without breaking the bank...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Sustainable travel practices",
-    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Keeping the dream alive by traveling the world.",
-    abstract: "Integrate the latest technologies with an innovative platform..."
+    abstract: "Integrate the latest technologies with an innovative platform...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Planning your next big adventure",
-    abstract: "Discover new horizons and plan your next exciting journey..."
+    abstract: "Discover new horizons and plan your next exciting journey...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "See the world through new eyes",
-    abstract: "Experience diverse cultures and broaden your perspectives..."
+    abstract: "Experience diverse cultures and broaden your perspectives...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "The art of solo travel",
-    abstract: "Embark on a journey of self-discovery and independence..."
+    abstract: "Embark on a journey of self-discovery and independence...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Budget-friendly travel tips",
-    abstract: "Learn how to explore the world without breaking the bank..."
+    abstract: "Learn how to explore the world without breaking the bank...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Sustainable travel practices",
-    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Keeping the dream alive by traveling the world.",
-    abstract: "Integrate the latest technologies with an innovative platform..."
+    abstract: "Integrate the latest technologies with an innovative platform...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Planning your next big adventure",
-    abstract: "Discover new horizons and plan your next exciting journey..."
+    abstract: "Discover new horizons and plan your next exciting journey...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "See the world through new eyes",
-    abstract: "Experience diverse cultures and broaden your perspectives..."
+    abstract: "Experience diverse cultures and broaden your perspectives...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "The art of solo travel",
-    abstract: "Embark on a journey of self-discovery and independence..."
+    abstract: "Embark on a journey of self-discovery and independence...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Budget-friendly travel tips",
-    abstract: "Learn how to explore the world without breaking the bank..."
+    abstract: "Learn how to explore the world without breaking the bank...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Sustainable travel practices",
-    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Keeping the dream alive by traveling the world.",
-    abstract: "Integrate the latest technologies with an innovative platform..."
+    abstract: "Integrate the latest technologies with an innovative platform...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Planning your next big adventure",
-    abstract: "Discover new horizons and plan your next exciting journey..."
+    abstract: "Discover new horizons and plan your next exciting journey...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "See the world through new eyes",
-    abstract: "Experience diverse cultures and broaden your perspectives..."
+    abstract: "Experience diverse cultures and broaden your perspectives...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "The art of solo travel",
-    abstract: "Embark on a journey of self-discovery and independence..."
+    abstract: "Embark on a journey of self-discovery and independence...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Budget-friendly travel tips",
-    abstract: "Learn how to explore the world without breaking the bank..."
+    abstract: "Learn how to explore the world without breaking the bank...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Sustainable travel practices",
-    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact...",
+    authorUrl:""
   },  {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Keeping the dream alive by traveling the world.",
-    abstract: "Integrate the latest technologies with an innovative platform..."
+    abstract: "Integrate the latest technologies with an innovative platform...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Planning your next big adventure",
-    abstract: "Discover new horizons and plan your next exciting journey..."
+    abstract: "Discover new horizons and plan your next exciting journey...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "See the world through new eyes",
-    abstract: "Experience diverse cultures and broaden your perspectives..."
+    abstract: "Experience diverse cultures and broaden your perspectives...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "The art of solo travel",
-    abstract: "Embark on a journey of self-discovery and independence..."
+    abstract: "Embark on a journey of self-discovery and independence...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Budget-friendly travel tips",
-    abstract: "Learn how to explore the world without breaking the bank..."
+    abstract: "Learn how to explore the world without breaking the bank...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Sustainable travel practices",
-    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Keeping the dream alive by traveling the world.",
-    abstract: "Integrate the latest technologies with an innovative platform..."
+    abstract: "Integrate the latest technologies with an innovative platform...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Planning your next big adventure",
-    abstract: "Discover new horizons and plan your next exciting journey..."
+    abstract: "Discover new horizons and plan your next exciting journey...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "See the world through new eyes",
-    abstract: "Experience diverse cultures and broaden your perspectives..."
+    abstract: "Experience diverse cultures and broaden your perspectives...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "The art of solo travel",
-    abstract: "Embark on a journey of self-discovery and independence..."
+    abstract: "Embark on a journey of self-discovery and independence...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Budget-friendly travel tips",
-    abstract: "Learn how to explore the world without breaking the bank..."
+    abstract: "Learn how to explore the world without breaking the bank...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Sustainable travel practices",
-    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact...",
+    authorUrl:""
   },  {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Keeping the dream alive by traveling the world.",
-    abstract: "Integrate the latest technologies with an innovative platform..."
+    abstract: "Integrate the latest technologies with an innovative platform...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Planning your next big adventure",
-    abstract: "Discover new horizons and plan your next exciting journey..."
+    abstract: "Discover new horizons and plan your next exciting journey...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "See the world through new eyes",
-    abstract: "Experience diverse cultures and broaden your perspectives..."
+    abstract: "Experience diverse cultures and broaden your perspectives...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "The art of solo travel",
-    abstract: "Embark on a journey of self-discovery and independence..."
+    abstract: "Embark on a journey of self-discovery and independence...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Budget-friendly travel tips",
-    abstract: "Learn how to explore the world without breaking the bank..."
+    abstract: "Learn how to explore the world without breaking the bank...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Sustainable travel practices",
-    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Keeping the dream alive by traveling the world.",
-    abstract: "Integrate the latest technologies with an innovative platform..."
+    abstract: "Integrate the latest technologies with an innovative platform...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Planning your next big adventure",
-    abstract: "Discover new horizons and plan your next exciting journey..."
+    abstract: "Discover new horizons and plan your next exciting journey...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "See the world through new eyes",
     abstract: "Experience diverse cultures and broaden your perspectives..."
   },
@@ -468,528 +638,726 @@ const cardData = [
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "The art of solo travel",
-    abstract: "Embark on a journey of self-discovery and independence..."
+    abstract: "Embark on a journey of self-discovery and independence...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Budget-friendly travel tips",
-    abstract: "Learn how to explore the world without breaking the bank..."
+    abstract: "Learn how to explore the world without breaking the bank...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Sustainable travel practices",
-    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Keeping the dream alive by traveling the world.",
-    abstract: "Integrate the latest technologies with an innovative platform..."
+    abstract: "Integrate the latest technologies with an innovative platform...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Planning your next big adventure",
-    abstract: "Discover new horizons and plan your next exciting journey..."
+    abstract: "Discover new horizons and plan your next exciting journey...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "See the world through new eyes",
-    abstract: "Experience diverse cultures and broaden your perspectives..."
+    abstract: "Experience diverse cultures and broaden your perspectives...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "The art of solo travel",
-    abstract: "Embark on a journey of self-discovery and independence..."
+    abstract: "Embark on a journey of self-discovery and independence...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Budget-friendly travel tips",
-    abstract: "Learn how to explore the world without breaking the bank..."
+    abstract: "Learn how to explore the world without breaking the bank...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Sustainable travel practices",
-    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Keeping the dream alive by traveling the world.",
-    abstract: "Integrate the latest technologies with an innovative platform..."
+    abstract: "Integrate the latest technologies with an innovative platform...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Planning your next big adventure",
-    abstract: "Discover new horizons and plan your next exciting journey..."
+    abstract: "Discover new horizons and plan your next exciting journey...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "See the world through new eyes",
-    abstract: "Experience diverse cultures and broaden your perspectives..."
+    abstract: "Experience diverse cultures and broaden your perspectives...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "The art of solo travel",
-    abstract: "Embark on a journey of self-discovery and independence..."
+    abstract: "Embark on a journey of self-discovery and independence...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Budget-friendly travel tips",
-    abstract: "Learn how to explore the world without breaking the bank..."
+    abstract: "Learn how to explore the world without breaking the bank...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Sustainable travel practices",
-    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Keeping the dream alive by traveling the world.",
-    abstract: "Integrate the latest technologies with an innovative platform..."
+    abstract: "Integrate the latest technologies with an innovative platform...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Planning your next big adventure",
-    abstract: "Discover new horizons and plan your next exciting journey..."
+    abstract: "Discover new horizons and plan your next exciting journey...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "See the world through new eyes",
-    abstract: "Experience diverse cultures and broaden your perspectives..."
+    abstract: "Experience diverse cultures and broaden your perspectives...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "The art of solo travel",
-    abstract: "Embark on a journey of self-discovery and independence..."
+    abstract: "Embark on a journey of self-discovery and independence...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Budget-friendly travel tips",
-    abstract: "Learn how to explore the world without breaking the bank..."
+    abstract: "Learn how to explore the world without breaking the bank...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Sustainable travel practices",
-    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Keeping the dream alive by traveling the world.",
-    abstract: "Integrate the latest technologies with an innovative platform..."
+    abstract: "Integrate the latest technologies with an innovative platform...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Planning your next big adventure",
-    abstract: "Discover new horizons and plan your next exciting journey..."
+    abstract: "Discover new horizons and plan your next exciting journey...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "See the world through new eyes",
-    abstract: "Experience diverse cultures and broaden your perspectives..."
+    abstract: "Experience diverse cultures and broaden your perspectives...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "The art of solo travel",
-    abstract: "Embark on a journey of self-discovery and independence..."
+    abstract: "Embark on a journey of self-discovery and independence...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Budget-friendly travel tips",
-    abstract: "Learn how to explore the world without breaking the bank..."
+    abstract: "Learn how to explore the world without breaking the bank...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Sustainable travel practices",
-    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Keeping the dream alive by traveling the world.",
-    abstract: "Integrate the latest technologies with an innovative platform..."
+    abstract: "Integrate the latest technologies with an innovative platform...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Planning your next big adventure",
-    abstract: "Discover new horizons and plan your next exciting journey..."
+    abstract: "Discover new horizons and plan your next exciting journey...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "See the world through new eyes",
-    abstract: "Experience diverse cultures and broaden your perspectives..."
+    abstract: "Experience diverse cultures and broaden your perspectives...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "The art of solo travel",
-    abstract: "Embark on a journey of self-discovery and independence..."
+    abstract: "Embark on a journey of self-discovery and independence...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Budget-friendly travel tips",
-    abstract: "Learn how to explore the world without breaking the bank..."
+    abstract: "Learn how to explore the world without breaking the bank...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Sustainable travel practices",
-    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Keeping the dream alive by traveling the world.",
-    abstract: "Integrate the latest technologies with an innovative platform..."
+    abstract: "Integrate the latest technologies with an innovative platform...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Planning your next big adventure",
-    abstract: "Discover new horizons and plan your next exciting journey..."
+    abstract: "Discover new horizons and plan your next exciting journey...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "See the world through new eyes",
-    abstract: "Experience diverse cultures and broaden your perspectives..."
+    abstract: "Experience diverse cultures and broaden your perspectives...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "The art of solo travel",
-    abstract: "Embark on a journey of self-discovery and independence..."
+    abstract: "Embark on a journey of self-discovery and independence...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Budget-friendly travel tips",
-    abstract: "Learn how to explore the world without breaking the bank..."
+    abstract: "Learn how to explore the world without breaking the bank...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Sustainable travel practices",
-    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Keeping the dream alive by traveling the world.",
-    abstract: "Integrate the latest technologies with an innovative platform..."
+    abstract: "Integrate the latest technologies with an innovative platform...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Planning your next big adventure",
-    abstract: "Discover new horizons and plan your next exciting journey..."
+    abstract: "Discover new horizons and plan your next exciting journey...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "See the world through new eyes",
-    abstract: "Experience diverse cultures and broaden your perspectives..."
+    abstract: "Experience diverse cultures and broaden your perspectives...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "The art of solo travel",
-    abstract: "Embark on a journey of self-discovery and independence..."
+    abstract: "Embark on a journey of self-discovery and independence...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Budget-friendly travel tips",
-    abstract: "Learn how to explore the world without breaking the bank..."
+    abstract: "Learn how to explore the world without breaking the bank...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Sustainable travel practices",
-    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Keeping the dream alive by traveling the world.",
-    abstract: "Integrate the latest technologies with an innovative platform..."
+    abstract: "Integrate the latest technologies with an innovative platform...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Planning your next big adventure",
-    abstract: "Discover new horizons and plan your next exciting journey..."
+    abstract: "Discover new horizons and plan your next exciting journey...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "See the world through new eyes",
-    abstract: "Experience diverse cultures and broaden your perspectives..."
+    abstract: "Experience diverse cultures and broaden your perspectives...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "The art of solo travel",
-    abstract: "Embark on a journey of self-discovery and independence..."
+    abstract: "Embark on a journey of self-discovery and independence...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Budget-friendly travel tips",
-    abstract: "Learn how to explore the world without breaking the bank..."
+    abstract: "Learn how to explore the world without breaking the bank...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Sustainable travel practices",
-    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Keeping the dream alive by traveling the world.",
-    abstract: "Integrate the latest technologies with an innovative platform..."
+    abstract: "Integrate the latest technologies with an innovative platform...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Planning your next big adventure",
-    abstract: "Discover new horizons and plan your next exciting journey..."
+    abstract: "Discover new horizons and plan your next exciting journey...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "See the world through new eyes",
-    abstract: "Experience diverse cultures and broaden your perspectives..."
+    abstract: "Experience diverse cultures and broaden your perspectives...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "The art of solo travel",
-    abstract: "Embark on a journey of self-discovery and independence..."
+    abstract: "Embark on a journey of self-discovery and independence...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Budget-friendly travel tips",
-    abstract: "Learn how to explore the world without breaking the bank..."
+    abstract: "Learn how to explore the world without breaking the bank...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Sustainable travel practices",
-    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Keeping the dream alive by traveling the world.",
-    abstract: "Integrate the latest technologies with an innovative platform..."
+    abstract: "Integrate the latest technologies with an innovative platform...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Planning your next big adventure",
-    abstract: "Discover new horizons and plan your next exciting journey..."
+    abstract: "Discover new horizons and plan your next exciting journey...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "See the world through new eyes",
-    abstract: "Experience diverse cultures and broaden your perspectives..."
+    abstract: "Experience diverse cultures and broaden your perspectives...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "The art of solo travel",
-    abstract: "Embark on a journey of self-discovery and independence..."
+    abstract: "Embark on a journey of self-discovery and independence...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Budget-friendly travel tips",
-    abstract: "Learn how to explore the world without breaking the bank..."
+    abstract: "Learn how to explore the world without breaking the bank...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Sustainable travel practices",
-    abstract: "Discover eco-friendly ways to explore while minimizing your impact..."
+    abstract: "Discover eco-friendly ways to explore while minimizing your impact...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/traveling.jpg",
     priceColor: "bg-softGreen",
     fill: "#F99716",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Keeping the dream alive by traveling the world.",
-    abstract: "Integrate the latest technologies with an innovative platform..."
+    abstract: "Integrate the latest technologies with an innovative platform...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/planning.jpg",
     priceColor: "bg-softYellow",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "Planning your next big adventure",
-    abstract: "Discover new horizons and plan your next exciting journey..."
+    abstract: "Discover new horizons and plan your next exciting journey...",
+    authorUrl:""
   },
   {
     imageUrl: "/images/see.jpg",
     priceColor: "bg-softred",
     fill: "currentColor",
     price: "$49/MO",
+    authorBlog:"",
+    published:"",
     title: "See the world through new eyes",
-    abstract: "Experience diverse cultures and broaden your perspectives..."
+    abstract: "Experience diverse cultures and broaden your perspectives...",
+    authorUrl:""
   }
 ];
 
@@ -1082,7 +1450,7 @@ export default function Home() {
                 Back to safety
               </button>
             </div>
-            <img className="w-100 h-90 hidden sm:flex" src="images/UhOh.jpg" alt=""/>
+            <img className="w-100 h-90 hidden sm:flex" src="images/UhOh.png" alt=""/>
           </section>
         )}
         {filteredCards.length > 0 && visibleItems < filteredCards.length && (
