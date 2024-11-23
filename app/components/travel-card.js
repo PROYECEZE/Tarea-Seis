@@ -1,9 +1,9 @@
 import Image from "next/image"
 
-export default function TravelCard({ imageUrl, priceColor, fill, price, title, abstract, authorUrl, authorBlog, published, link = null}) {
+export default function TravelCard({ id, imageUrl, priceColor, fill, price, title, abstract, authorUrl, authorBlog, published, link = null}) {
   return (
     <div className="rounded-lg bg-white shadow-sm transition-shadow hover:shadow-md relative">
-      {link && <a href={link} className="absolute inset-0" aria-label="read the post content"></a>}
+      <a href={`/posts/${id}`} className="absolute inset-0" aria-label="read the post content"></a>
       <div className="relative">
         <Image
           alt="Photos of works"
@@ -22,7 +22,7 @@ export default function TravelCard({ imageUrl, priceColor, fill, price, title, a
           <dt className="text-lightBlack font-roboto mb-2 text-xl font-black">
             {title}
           </dt>
-          <dd className="font-roboto mb-1 text-softGray font-normal">
+          <dd className="font-roboto mb-1 text-softGray font-normal line-clamp-2">
             {abstract}
           </dd>
         </dl>
