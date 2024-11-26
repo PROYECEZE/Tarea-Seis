@@ -1,16 +1,18 @@
 import Image from "next/image"
 
-export default function TravelCard({ imageUrl, priceColor, fill, price, title, abstract, link = null}) {
+export default function TravelCard({ id, imageUrl, priceColor, fill, price, title, abstract, authorUrl, authorBlog, published}) {
   return (
     <div className="rounded-lg bg-white shadow-sm transition-shadow hover:shadow-md relative">
-      {link && <a href={link} className="absolute inset-0" aria-label="read the post content"></a>}
+      <a href={`/posts/${id}`} className="absolute inset-0" aria-label="read the post content"></a>
       <div className="relative">
-        <Image
+      <div className="clip-diagonal overflow-hidden rounded-t-md">
+        <Image 
           alt="Photos of works"
           height={200}
           src={imageUrl}
           width={400}
         />
+        </div>
         <div
           className={`absolute left-4 top-4 rounded-full px-3 py-1 text-xs text-white font-roboto font-black tracking-eightLetter ${priceColor}`} aria-label="blog price $49/MO"
         >
@@ -22,7 +24,7 @@ export default function TravelCard({ imageUrl, priceColor, fill, price, title, a
           <dt className="text-lightBlack font-roboto mb-2 text-xl font-black">
             {title}
           </dt>
-          <dd className="font-roboto mb-1 text-softGray font-normal">
+          <dd className="font-roboto mb-1 text-softGray font-normal line-clamp-2">
             {abstract}
           </dd>
         </dl>
@@ -38,12 +40,12 @@ export default function TravelCard({ imageUrl, priceColor, fill, price, title, a
               alt="Blog author"
               className="h-6 w-6 rounded-full"
               height={32}
-              src="/images/women.png"
+              src={authorUrl}
               width={32}
             />
-            <span className="font-roboto text-xs text-softGray font-black ml-2 tracking-sevenLetter" aria-label="Author name">ALIVE COOPER</span>
+            <span className="font-roboto text-xs text-softGray font-black ml-2 tracking-sevenLetter" aria-label="Author name">{authorBlog}</span>
           </div>
-          <span className="font-roboto text-xs text-softGray font-black tracking-sevenLetter" aria-label="blog publication MAY 02">MAY 02</span>
+          <span className="font-roboto text-xs text-softGray font-black tracking-sevenLetter" aria-label="blog publication MAY 02">{published}</span>
         </div>
       </div>
     </div>

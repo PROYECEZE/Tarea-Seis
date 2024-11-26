@@ -1,16 +1,18 @@
 
-export default function InfoPost({ title, subTitle, imageUrl, published }) {
+
+'use client'
+
+export default function InfoPost({ title, abstract, imageUrl, published, authorBlog, authorUrl }) {
   return (
-  <>
     <main className="container px-8 py-10 max-w-dimensions sm:py-24 sm:px-0 font-roboto">
       <h1 className="text-center text-2xl font-bold text-lighBlack sm:text-43px">{title}</h1>
-      <p className="mt-6 text-base sm:text-postSubtitle text-darkBlue font-black text-center">{subTitle}</p>
+      <p className="mt-6 text-base sm:text-postSubtitle text-darkBlue font-black text-center">{abstract}</p>
       <div className="my-10 sm:my-20 flex items-center gap-10 justify-between">
         <div className="flex items-center">
-          <img src="images/women.jpg" alt="Alice Cooper" className="w-9 h-auto"/>
+          <img src={authorUrl} alt={authorBlog} className="w-9 h-auto"/>
           <div className="ml-3">
-            <p className="font-semibold text-gray-900 text-xs tracking-wider font-black text-lighBlack">ALICE COOPER</p>
-            <p className="mt-0.5 text-sm text-darkBlue font-black opacity-70 text-xs">{published}</p>
+            <p className="text-gray-900 text-xs tracking-wider font-black text-lighBlack">{authorBlog}</p>
+            <p className="mt-0.5  text-darkBlue font-black opacity-70 text-xs">{published}</p>
           </div>
         </div>
         <div className="flex items-center space-x-4">
@@ -37,10 +39,9 @@ export default function InfoPost({ title, subTitle, imageUrl, published }) {
         <figcaption className="mt-4 text-center text-sm text-lightBlue font-black">This is a caption on this photo for reference</figcaption>
       </figure>
       <div className="mt-10 max-w-none">
-        <p className="font-black text-base sm:text-postInfo"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+        <p className="font-black text-base sm:text-postInfo"> 11  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
         <p className="pt-9 font-black text-base sm:text-postInfo"> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? </p>
       </div>
     </main>
-  </>
   )
 }
