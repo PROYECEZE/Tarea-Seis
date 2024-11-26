@@ -17,7 +17,7 @@ module.exports = {
         intenseGray: '#B4C2D3',
         softGreen: '#42BA96',
         softYellow:'#F2C94C',
-        softred: '#DF4759',
+        softRed: '#DF4759',
         intenseYellow: '#F99716',
         snowBlue:'#D9E2EF',
         strongBlue:'#12263F',
@@ -55,6 +55,11 @@ module.exports = {
       }
     },
   },
+  safelist: [
+    'bg-softGreen',
+    'bg-softYellow',
+    'bg-softRed',
+  ],
   plugins: [],
 };
 
