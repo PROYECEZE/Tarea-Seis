@@ -1,16 +1,18 @@
 import Image from "next/image"
 
-export default function TravelCard({ id, imageUrl, priceColor, fill, price, title, abstract, authorUrl, authorBlog, published, link = null}) {
+export default function TravelCard({ id, imageUrl, priceColor, fill, price, title, abstract, authorUrl, authorBlog, published}) {
   return (
     <div className="rounded-lg bg-white shadow-sm transition-shadow hover:shadow-md relative">
       <a href={`/posts/${id}`} className="absolute inset-0" aria-label="read the post content"></a>
       <div className="relative">
-        <Image
+      <div className="clip-diagonal overflow-hidden rounded-t-md">
+        <Image 
           alt="Photos of works"
           height={200}
           src={imageUrl}
           width={400}
         />
+        </div>
         <div
           className={`absolute left-4 top-4 rounded-full px-3 py-1 text-xs text-white font-roboto font-black tracking-eightLetter ${priceColor}`} aria-label="blog price $49/MO"
         >

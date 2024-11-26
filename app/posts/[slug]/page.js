@@ -4,11 +4,9 @@ import InfoPost from "../../components/infoPost"
 export default async function Post({ params }) {
   let post = null
   const slug = (await params).slug
-  
-  console.log('localhost:3000/posts/' + slug)
-  
+
   try {
-    const response = await fetch('http://localhost:3000/posts/' + slug)
+    const response = await fetch('http://localhost:3001/posts/' + slug)
 
     if (!response.ok) {
       throw new ApiError()

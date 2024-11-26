@@ -4,9 +4,13 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
     extend: {
+      clipPath: {
+        'diagonal': 'polygon(0 0, 100% 0, 100% 85%, 0 100%)',
+      },
       colors: {
         darkBlue: '#506690',
         lightBlue: '#869AB8',
@@ -17,7 +21,7 @@ module.exports = {
         intenseGray: '#B4C2D3',
         softGreen: '#42BA96',
         softYellow:'#F2C94C',
-        softred: '#DF4759',
+        softRed: '#DF4759',
         intenseYellow: '#F99716',
         snowBlue:'#D9E2EF',
         strongBlue:'#12263F',
@@ -55,6 +59,11 @@ module.exports = {
       }
     },
   },
+  safelist: [
+    'bg-softGreen',
+    'bg-softYellow',
+    'bg-softRed',
+  ],
   plugins: [],
 };
 

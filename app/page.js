@@ -13,7 +13,7 @@ export default function Home() {
   const [filteredPosts, setFilteredPosts] = useState([]);
 
   useEffect(() => {
-    fetch('//localhost:3000/posts').then(data => data.json()).then(data => {
+    fetch('http://localhost:3001/posts/').then(data => data.json()).then(data => {
       setPosts(data);
       setFilteredPosts(data);
     });
