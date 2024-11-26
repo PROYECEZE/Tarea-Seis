@@ -5,8 +5,8 @@ export default function TravelCard({ id, imageUrl, priceColor, price, title, abs
     <div className="rounded-lg bg-white shadow-sm transition-shadow hover:shadow-md relative">
       <a href={`/posts/${id}`} className="absolute inset-0" aria-label="read the post content"></a>
       <div className="relative">
-      <div className="clip-diagonal overflow-hidden rounded-t-md">
-        <Image 
+      <div className="postImagen">
+        <Image className="rounded-t-lg"
           alt="Photos of works"
           height={200}
           src={imageUrl}

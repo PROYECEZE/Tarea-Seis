@@ -7,39 +7,46 @@ import TravelCard from "./components/travel-card"
 const ITEMS_PER_PAGE = 6;
 
 export default function Home() {
-  const [searchQuery, setSearchQuery] = useState('')
-  const [visibleItems, setVisibleItems] = useState(ITEMS_PER_PAGE)
   const [posts, setPosts] = useState([]);
   const [filteredPosts, setFilteredPosts] = useState([]);
+  const [searchQuery, setSearchQuery] = useState('');
 
-  useEffect(() => {
-    fetch('http://localhost:3001/posts/').then(data => data.json()).then(data => {
-      setPosts(data);
-      setFilteredPosts(data);
-    });
-  }, [visibleItems]);
-
-  const handleSearch = (e) => {
-    e.preventDefault()
-    setVisibleItems(ITEMS_PER_PAGE)
+  const [currentPage, setCurrentPage] = useState(1);
+  const loadPage = (page = 1) => {
+    fetch(`http://localhost:3001/posts/?_page=${page}&_per_page=${ITEMS_PER_PAGE}`).then(data => data.json()).then(data => {
+      const postData = data.data
+      setPosts(prev => [...prev, ...postData]);
+      setFilteredPosts(prev => [...prev, ...postData]);
+      setCurrentPage(page);
+    })
   }
 
+  useEffect(() => {
+    loadPage();
+  }, []);
+  
   const handleLoadMore = () => {
-    setVisibleItems(prevVisibleItems => prevVisibleItems + ITEMS_PER_PAGE)
+    loadPage(currentPage + 1);
   }
 
   const filterPosts = (value) => {
     setSearchQuery(value);
 
     if (!value) {
-      setFilteredPosts(posts.slice(0, 6));
+      setFilteredPosts(posts);
+    } else {
+      const filteredCards = posts.filter(card => 
+        card.title.toLowerCase().includes(value.toLowerCase()) ||
+        card.abstract.toLowerCase().includes(value.toLowerCase()) ||
+        card.authorBlog.toLowerCase().includes(value.toLowerCase())
+      );
+      setFilteredPosts(filteredCards);
     }
-    const filteredCards = posts.filter(card => 
-      card.title.toLowerCase().includes(value.toLowerCase()) ||
-      card.abstract.toLowerCase().includes(value.toLowerCase()) ||
-      card.authorBlog.toLowerCase().includes(value.toLowerCase())
-    )
-    setFilteredPosts(filteredCards)
+  }
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    filterPosts(searchQuery);
   }
 
   return (
@@ -94,9 +101,11 @@ export default function Home() {
           </form>
         </section>
         <section className='py-5 cursor-pointer grid gap-10 md:grid-cols-2 lg:grid-cols-3'>
-          {filteredPosts.slice(0, visibleItems).map((card, index) => (
+        {filteredPosts.map((card, index) => {
+          return (
             <TravelCard key={index} {...card} />
-          ))}
+            );
+          })}
         </section>
         {filteredPosts.length === 0 && (
           <section className="flex gap-20 container max-w-size sm:mt-32 mt-0 font-roboto px-0">
@@ -111,12 +120,12 @@ export default function Home() {
                 Back to safety
               </button>
             </div>
-            <img className="w-100 h-90 hidden sm:flex" src="images/UhOh.png" alt=""/>
+            <img className="w-100 h-90 hidden sm:flex" src="/images/UhOh.png" alt=""/>
           </section>
         )}
-        {filteredPosts.length > 0 && visibleItems < filteredPosts.length && (
+        {filteredPosts.length > 0 && (
           <section className="py-10 sm:py-20 text-center">
-            <button 
+            <button
               onClick={handleLoadMore}
               className="flex items-center m-auto border border-snowBlue rounded hover:bg-blue-100"
             >

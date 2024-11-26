@@ -4,13 +4,9 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
     extend: {
-      clipPath: {
-        'diagonal': 'polygon(0 0, 100% 0, 100% 85%, 0 100%)',
-      },
       colors: {
         darkBlue: '#506690',
         lightBlue: '#869AB8',

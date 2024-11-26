@@ -1,5 +1,3 @@
-
-
 'use client'
 
 export default function InfoPost({ title, abstract, imageUrl, published, authorBlog, authorUrl }) {

@@ -254,7 +254,7 @@
       "published":"Published on Jun 10, 2016",
       "title": "The art of solo travel",
       "abstract": "Embark on a journey of self-discovery and independence...",
-      "authorUrl":"/images/author.jpgº"
+      "authorUrl":"/images/author.jpg"
     },
     {
       "id": "24",
@@ -638,7 +638,8 @@
       "authorBlog":"EZEQUIEL BLANCO",
       "published":"Published on Jun 10, 2016",
       "title": "See the world through new eyes",
-      "abstract": "Experience diverse cultures and broaden your perspectives..."
+      "abstract": "Experience diverse cultures and broaden your perspectives...",
+      "authorUrl": "/images/author.jpg"
     },
     {
       "id": "58",
